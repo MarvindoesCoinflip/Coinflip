@@ -139,7 +139,7 @@
       baseTurns += spins;
 
       const bit = randBit();                 // 0 = Kopf, 1 = Zahl
-      const deg = baseTurns*360 + (bit ? 0 : 180); // deine aktuelle Logik beibehalten
+      const deg = baseTurns*360 + (bit ? 180 : 0); // deine aktuelle Logik beibehalten
       result.textContent = '…';
       coin.style.transform = `rotateY(${deg}deg)`;
 
