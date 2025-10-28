@@ -88,16 +88,6 @@
     }
 
     @media (prefers-reduced-motion: reduce) { .coin { transition-duration: 0ms; } }
-
-    <style>
-  /* ... dein bisheriges CSS ... */
-
-  /* --- iOS Safari 3D/backface Fix --- */
-  @supports (-webkit-touch-callout: none) {
-    .wrap { -webkit-perspective: 1200px; }
-    .coin { -webkit-transform-style: preserve-3d; }
-    .face, .face img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-    .tails img { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
   }
 </style>
   </style>
