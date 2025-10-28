@@ -144,7 +144,7 @@
       coin.style.transform = `rotateY(${deg}deg)`;
 
       await new Promise(r=>setTimeout(r, 920));
-      result.textContent = bit ? 'Zahl' : 'Kopf';
+      result.textContent = bit ? 'Kopf' : 'Zahl';
     }
 
     document.getElementById('flipBtn').addEventListener('click', flip);
